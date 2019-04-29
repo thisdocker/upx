@@ -31,4 +31,4 @@ RUN apk update && apk upgrade \
 
 COPY --from=buildStage /usr/bin/upx /usr/bin/upx
 
-CMD ["/bin/bash"]
+CMD ["/bin/bash","-l"]
